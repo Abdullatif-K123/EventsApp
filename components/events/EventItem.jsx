@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import Button from "../ui/Button";
 import classes from "./event-item.module.css";
 import DateIcon from "../icons/date-icon";
@@ -14,7 +13,6 @@ const EventItem = ({ singleEvent }) => {
   });
   const locationReadable = location.replace(", ", "\n");
 
-  console.log(locationReadable);
   return (
     <li className={classes.item}>
       <img src={"/" + image} alt={title} />

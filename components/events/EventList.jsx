@@ -1,6 +1,7 @@
 import React from "react";
 import EventItem from "./EventItem";
 import classes from "./event-list.module.css";
+import { useEffect } from "react";
 const EventList = ({ eventList }) => {
   return (
     <div>
