@@ -21,9 +21,16 @@ export async function getServerSideProps(context) {
     );
     ans = result;
     console.log(result);
+    return {
+      props: {
+        data: result,
+      },
+    };
   } catch (error) {
     console.error(error);
   }
+  console.log(ans);
+  console.log("I'm here");
   return {
     props: {
       data: ans ? ans : {},
